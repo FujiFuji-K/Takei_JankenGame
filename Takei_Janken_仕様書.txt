@@ -1,0 +1,121 @@
+[GItHubルール]
+・masterブランチは整合性を確認したコードを入れる。
+・クラスごとにブランチを分ける。
+
+
+[プロジェクトルール]
+・作成したコードは作成者別で分ける。基本的に他人のコードはいじらない。
+
+
+
+[Takei_Janken仕様書]
+・コンソールアプリケーション。
+・3回先制勝負。
+
+・ゲームの流れ
+	1.数字キーでプレイヤーの出す手を決める。
+	2.CPUがランダムで手を決めて、判定をする。
+	3.一方が3回勝つまで繰り返す。
+	4.決着がついたら結果を表示する。
+	5.数字キーで再挑戦するか、終わるかを選択。
+
+
+・ゲーム画面
+	じゃんけんゲーム！3回先制した方が勝利！
+	0->グー
+	1->チョキ
+	2->パー
+	出す手を決めてね!:(ここに入力した値)
+	
+	ジャンケンポン！
+	あなたが出した手->Hand
+	CPUが出した手->Hand
+	
+	[勝者]の勝ち！
+
+	(勝敗が付くまで繰り返し)
+
+	ゲーム終了！
+	あなたの勝ち！ or CPUの勝ち！
+	おめでとう！ or 残念！
+	
+	もう一度ゲームする？: Yes or No
+
+
+[おおまかなクラス構成]
+
+・Application:main関数、ゲームループ
+	┣Player
+	┣CPU
+	┣Judgemnt:判定クラス
+	┗OutputString:文字を出力するクラス
+
+
+
+enum eHand
+{
+	Rock,
+	Scissors,
+	Paper,
+}
+
+enum eResult
+{
+	PlayerWin,
+	CPUWin,
+}
+
+Application class
+{
+	Player player;
+	CPU cpu;
+	
+	{//GameLoop
+		
+		
+		
+	}
+}
+
+Player class
+{
+	int winCount;
+	eHand hand;
+
+	//標準入力で入力した値を返す
+	eHand InputValue();
+
+	
+	
+}
+
+
+
+CPU class
+{
+	int winCount;	//勝利回数
+	eHand hand;		//現在の手
+	
+	eHand GetHand();	//手を返す関数
+	
+}
+
+Judgement class
+{
+	//プレイヤーとエネミーの手を引数に受け取って結果を戻り値で返す。
+	eResult Judement(eHand player, eHand enemy);
+	
+	//互いの勝利回数を引数に受け取り、勝敗がついたらtrueを返す。
+	bool FinishGame(int playerWinCount, int enemyWinCount);
+}
+
+OutputString class
+{
+	
+	void OutputStartGame();
+	
+	void OutputBattle(eHand player,eHand enemy);
+
+	void OutputEndGame();
+	
+}
