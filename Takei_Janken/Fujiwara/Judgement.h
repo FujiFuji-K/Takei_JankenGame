@@ -1,6 +1,5 @@
 // ”»’è
 #pragma once
-
 #include "../common.h"
 
 namespace Fujiwara

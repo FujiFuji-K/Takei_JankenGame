@@ -24,5 +24,6 @@
     <ClCompile Include="Fujiwara\debug_main.cpp">
       <Filter>Fujiwara</Filter>
     </ClCompile>
+    <ClCompile Include="Application.cpp" />
   </ItemGroup>
 </Project>

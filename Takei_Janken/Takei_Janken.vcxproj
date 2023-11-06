@@ -132,6 +132,7 @@
     <ClInclude Include="Fujiwara\string_utility.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Application.cpp" />
     <ClCompile Include="Fujiwara\debug_main.cpp" />
     <ClCompile Include="Fujiwara\Judgement.cpp" />
   </ItemGroup>
