@@ -3,13 +3,11 @@
 
 namespace Tsutsui
 {
-	class Player
+	class CPU
 	{
 	public:
 		int winCount;
-		int hd;
-
-		Common::eHand InputResult(void);
-
-    };
+		int hand;
+		Common::eHand GetHand(void);
+	};
 }
