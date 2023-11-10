@@ -6,7 +6,7 @@ namespace Tsutsui
 	class CPU
 	{
 	public:
-		int winCount;
+		int cpu_winCount;
 		int cpuHand;
 		Common::eHand GetHand(void);
 	};

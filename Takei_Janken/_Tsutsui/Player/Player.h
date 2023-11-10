@@ -6,7 +6,7 @@ namespace Tsutsui
 	class Player
 	{
 	public:
-		int winCount;
+		int pl_winCount;
 		int playerHand;
 
 		Common::eHand InputResult(void);
