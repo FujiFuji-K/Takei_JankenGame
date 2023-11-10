@@ -7,7 +7,7 @@ namespace Tsutsui
 	{
 	public:
 		int winCount;
-		int hd;
+		int playerHand;
 
 		Common::eHand InputResult(void);
 

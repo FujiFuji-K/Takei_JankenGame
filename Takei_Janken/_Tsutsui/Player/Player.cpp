@@ -5,18 +5,21 @@ using namespace::std;
 
 Common::eHand Tsutsui::Player::InputResult(void)
 {
-	cin >> hd;
-	if (hd == 0)
+	cin >> playerHand;
+	if (playerHand == 0)
 	{
-		Common::eHand(0);
+		cout << "グーです" < endl;
+		Common::eHand::Rock;
 	}
-	else if (hd == 1)
+	else if (playerHand == 1)
 	{
-		Common::eHand(1);
+		cout << "チョキです" < endl;
+		Common::eHand::Scissors;
 	}
-	else if (hd == 2)
+	else if (playerHand == 2)
 	{
-		Common::eHand(2);
+		cout << "パーです" < endl;
+		Common::eHand::Paper;
 	}
 	return Common::eHand();
 }

@@ -3,18 +3,18 @@
 
 Common::eHand Tsutsui::CPU::GetHand(void)
 {
-	hand = rand() % 3;
-	if (hand == 0)
+	cpuHand = rand() % 3;
+	if (cpuHand == 0)
 	{
-		Common::eHand(0);
+		Common::eHand::Rock;
 	}
-	else if (hand == 1)
+	else if (cpuHand == 1)
 	{
-		Common::eHand(1);
+		Common::eHand::Scissors;
 	}
-	else if (hand == 2)
+	else if (cpuHand == 2)
 	{
-		Common::eHand(2);
+		Common::eHand::Paper;
 	}
 	return Common::eHand();
 }

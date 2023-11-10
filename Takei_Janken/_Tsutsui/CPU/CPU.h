@@ -7,7 +7,7 @@ namespace Tsutsui
 	{
 	public:
 		int winCount;
-		int hand;
+		int cpuHand;
 		Common::eHand GetHand(void);
 	};
 }
