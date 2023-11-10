@@ -4,6 +4,8 @@
 #include "common.h"
 #include "Fujiwara/Judgement.h"
 #include "Fujiwara/string_utility.h"
+#include "Tsutsui/Player/Player.h"
+#include "Tsutsui/CPU/CPU.h"
 
 
 namespace Application

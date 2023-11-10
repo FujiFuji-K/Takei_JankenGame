@@ -1,7 +1,7 @@
 ﻿#include "CPU.h"
 #include <iostream>
 
-Common::eHand Tsutsui::CPU::GetHand(void)
+Common::eHand Tsutsui::CPU::GetHand(Common::eHand cpuHand)
 {
 	cpuHand = rand() % 3;
 	if (cpuHand == 0)

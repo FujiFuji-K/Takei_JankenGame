@@ -3,7 +3,7 @@
 using namespace::std;
 
 
-Common::eHand Tsutsui::Player::InputResult(void)
+Common::eHand Tsutsui::Player::InputResult(Common::eHand playerHand)
 {
 	cin >> playerHand;
 	if (playerHand == 0)

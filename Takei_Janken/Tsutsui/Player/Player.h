@@ -7,9 +7,8 @@ namespace Tsutsui
 	{
 	public:
 		int pl_winCount;
-		int playerHand;
 
-		Common::eHand InputResult(void);
+		Common::eHand InputResult(Common::eHand playerHand);
 
     };
 }
