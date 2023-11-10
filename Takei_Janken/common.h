@@ -16,5 +16,6 @@ namespace Common
 	{
 		PlayerWin = 0,
 		CPUWin = 1,
+		Draw = 2,
 	};
 }
